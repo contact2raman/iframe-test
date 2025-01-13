@@ -13,17 +13,14 @@
             overflow: hidden;
             position: relative;
         }
-        /* Optional: styling for the iframe */
-        #google-frame {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
     </style>
 </head>
 <body>
     <div id="chat-container">
-        <iframe id="google-frame" src="https://www.google.com"></iframe>
+        <!-- Google will be loaded when the page is loaded -->
+        <script>
+            window.location.href = "https://www.google.com";
+        </script>
     </div>
 
     <script src='https://cdn.jsdelivr.net/npm/kore-web-sdk@11.9.0/dist/umd/kore-web-sdk-umd-chat.min.js'></script> 
